@@ -1,0 +1,14 @@
+
+PODS:
+- AFNetworking (1.1.0)
+- KNSemiModalViewController (0.2)
+
+DEPENDENCIES:
+- AFNetworking
+- KNSemiModalViewController
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  KNSemiModalViewController: e6ce35a5e4666b1ee2b3671b1f1fa6a1dd720c29
+
+COCOAPODS: 0.16.1
