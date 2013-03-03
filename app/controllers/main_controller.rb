@@ -8,6 +8,7 @@ class MainController < UIViewController
   ib_action :slider_value_changed
 
   def mapView(map, didUpdateUserLocation:user_location)
+    return unless has_user_coordinate?
     set_map_region
     show_nearby_photos
   end
@@ -42,6 +43,10 @@ class MainController < UIViewController
     map.setCenterCoordinate(user_coordinate, animated:true)
     region = MKCoordinateRegionMakeWithDistance(user_coordinate,region_distance_meters,region_distance_meters)
     map.setRegion(region)
+  end
+
+  def has_user_coordinate?
+    map.userLocation.location
   end
 
   def user_coordinate
