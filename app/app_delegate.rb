@@ -14,7 +14,7 @@ class AppDelegate
 
   def setup_client
     AFMotion::Client.build_shared("https://api.instagram.com/v1/") do
-      operation :json
+      response_serializer :json
 
       header "Accept", "application/json"
     end

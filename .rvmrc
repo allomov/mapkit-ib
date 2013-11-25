@@ -1,1 +1,1 @@
-rvm --create 1.9.3@mctv-mapkit
+rvm --create 2.0.0@mctv-mapkit

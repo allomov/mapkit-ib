@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
-require 'motion/project'
+require 'motion/project/template/ios'
 require 'bundler'
+require 'motion-cocoapods'
 Bundler.require
+
 
 Motion::Project::App.setup do |app|
   app.name = 'mctv-mapkit'
