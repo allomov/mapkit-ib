@@ -12,4 +12,4 @@ nbproject
 *.sw[po]
 .epro
 ib.xcodeproj
-config/instagram.yml
+resources/config.yml

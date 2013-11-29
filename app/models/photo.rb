@@ -18,7 +18,7 @@ class Photo
 
   def self.search(coordinates, distance, &block)
     params = {
-      client_id: INSTAGRAM_CLIENT_ID, 
+      client_id: ENV['INSTAGRAM_CLIENT_ID'],
       lat: coordinates.latitude, 
       lng: coordinates.longitude,
       distance: distance
