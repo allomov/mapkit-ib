@@ -16,7 +16,9 @@ class MainController < UIViewController
   def mapView(map, didSelectAnnotationView:view)
     if view.annotation.respond_to? :url
       AFMotion::Image.get(view.annotation.url) do |result|
-        self.presentSemiView(result.object.uiimageview)
+        image_view = UIImageView.alloc.initWithImage(result.object)
+        self.presentSemiView(image_view)
+        self.resizeSemiView(image_view.bounds.size)
       end
     end
   end
